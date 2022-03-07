@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/item_toolbar" />
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/mDrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/profileView"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@color/colorAccent" >
+
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/imgTitle"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_logo_pro"/>
+
+                <com.greenply.crm.custome_views.TextViewBold
+                    android:layout_below="@+id/imgTitle"
+                    android:id="@+id/txtProfileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/name_yellow"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="Akhilesh Pathak" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viesr"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/profileView"
+                android:background="#d7d7d7" />
+
+            <RelativeLayout
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/viesr"
+                android:background="#ffffff" >
+
+                <ListView
+                    android:id="@+id/mDrawerList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:choiceMode="singleChoice"
+                    android:divider="@null"
+                    android:background="#f8f8f8"
+                    android:dividerHeight="0dp" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>
+
+
+
+
+
+

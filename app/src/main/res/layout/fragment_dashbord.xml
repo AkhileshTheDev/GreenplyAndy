@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:id="@+id/mLayoutMain">
+
+    <androidx.viewpager.widget.ViewPager
+        android:duplicateParentState="true"
+        android:clickable="false"
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="220dp" />
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:duplicateParentState="true"
+        android:clickable="false"
+        android:id="@+id/mLayoutDots"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"/>
+
+    <GridLayout
+        android:layout_below="@+id/mViewPager"
+        android:layout_centerVertical="true"
+        android:id="@+id/mainGrid"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="#FEE8EB"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:background="#FEE8EB"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/mImgIcon1"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_menu_dashbord"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <com.greenply.crm.custome_views.TextViewBold
+                    android:layout_below="@+id/mImgIcon1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/mTxtTitle1"
+                    android:text="Estimates"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:background="#EBF1FF"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/mImgIcon2"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_menu_account"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <com.greenply.crm.custome_views.TextViewBold
+                    android:layout_below="@+id/mImgIcon2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/mTxtTitle2"
+                    android:text="Accounts"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:background="#FFFADA"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/mImgIcon3"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_menu_reminders"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <com.greenply.crm.custome_views.TextViewBold
+                    android:layout_below="@+id/mImgIcon3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/mTxtTitle3"
+                    android:text="Reminders"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:background="#ECFFEB"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/mImgIcon4"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_menu_notes"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <com.greenply.crm.custome_views.TextViewBold
+                    android:layout_below="@+id/mImgIcon4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/mTxtTitle4"
+                    android:text="Notes"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:background="#FAEBFE"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/mImgIcon5"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_menu_reminders"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <com.greenply.crm.custome_views.TextViewBold
+                    android:id="@+id/mTxtTitle5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mImgIcon5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:text="Share"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15dp" />
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+
+            <RelativeLayout
+                android:background="#FFE9DB"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/mImgIcon6"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_menu_history"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <com.greenply.crm.custome_views.TextViewBold
+                    android:layout_below="@+id/mImgIcon6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/mTxtTitle6"
+                    android:text="History"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </GridLayout>
+
+
+</RelativeLayout>

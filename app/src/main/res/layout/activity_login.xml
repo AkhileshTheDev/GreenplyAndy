@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/mImgLogo"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_logo_splash_screen" />
+
+    <com.greenply.crm.custome_views.TextViewBold
+        android:id="@+id/mTxtTitleOne"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/mImgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Login"
+        android:textColor="@color/colorAccent"/>
+    <com.greenply.crm.custome_views.TextViewRegular
+        android:id="@+id/mTxtTitleTwo"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/mTxtTitleOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Please login to continue"
+        android:textColor="@color/dark_gray"/>
+
+
+    <com.greenply.crm.custome_views.EditTextRegular
+        android:id="@+id/mEditUserId"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/mTxtTitleTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_border_green"
+        android:drawableLeft="@drawable/ic_action_user"
+        android:drawablePadding="6dp"
+        android:inputType="textEmailAddress"
+        android:padding="8dp"
+        android:hint="User Id"/>
+
+    <com.greenply.crm.custome_views.EditTextRegular
+        android:id="@+id/mEditUserPass"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/mEditUserId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_border_green"
+        android:drawableLeft="@drawable/ic_action_lock"
+        android:drawablePadding="6dp"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:hint="Enter Password"/>
+
+    <com.greenply.crm.custome_views.TextViewRegular
+        android:id="@+id/mTxtForgot"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/mEditUserPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password"
+        android:textSize="16dp"
+        android:textColor="@color/colorAccent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/mLayoutLogin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/mTxtForgot"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape_rounded_corner_green_btn">
+
+        <com.greenply.crm.custome_views.TextViewBold
+            android:id="@+id/mTxtNextBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="LOGIN"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+
+
+<LinearLayout
+    android:layout_marginBottom="15dp"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.greenply.crm.custome_views.TextViewRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:textColor="@color/dark_gray"
+        android:text="Design and Development by "/>
+
+    <com.greenply.crm.custome_views.TextViewBold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:text="Nebula Advertising Pvt Ltd."/>
+
+
+</LinearLayout>
+
+</RelativeLayout>
